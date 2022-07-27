@@ -12,10 +12,8 @@ class Main {
 
         Scanner input = new Scanner(System.in);
 
-
         System.out.println("Enter first number");
         number1 = input.nextInt();
-
 
         System.out.println("Choose an operator: +, -, *, or /");
         operator = input.next();
@@ -25,24 +23,20 @@ class Main {
 
         switch (operator) {
 
-
             case "+":
                 result = number1 + number2;
                 System.out.println(number1 + " + " + number2 + " = " + result);
                 break;
-
 
             case "-":
                 result = number1 - number2;
                 System.out.println(number1 + " - " + number2 + " = " + result);
                 break;
 
-
             case "*":
                 result = number1 * number2;
                 System.out.println(number1 + " * " + number2 + " = " + result);
                 break;
-
 
             case "/":
                 result = (double) number1 / number2;
