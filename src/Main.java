@@ -5,8 +5,11 @@ class Main {
     }
 
     public static void main(String[] args) {
+        ReadLine readLine = new ReadLine();
+        Calculations calculations = new Calculations(readLine.getA(), readLine.getOperator(), readLine.getB());
+        Result.outToConsole(calculations.getCalc().getResult());
 
-        String operator;
+       /* String operator;
         int number1, number2;
         double result;
 
@@ -48,6 +51,6 @@ class Main {
                 break;
         }
 
-        input.close();
+        input.close();*/
     }
 }
