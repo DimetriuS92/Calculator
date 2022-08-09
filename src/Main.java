@@ -2,8 +2,6 @@ import Calculations.Input;
 import Calculations.PossibleInputs;
 import Exceptions.MyCustomException;
 
-import java.util.Scanner;
-
 class Main {
     public Main() {
     }
@@ -11,7 +9,7 @@ class Main {
     public static void main(String[] args) throws MyCustomException {
         Input input = new Input();
         input.input();
-        PossibleInputs possibleInputs = new PossibleInputs(input.getNumber1(),input.getNumber2(), input.getOperator());
+        PossibleInputs possibleInputs = new PossibleInputs(input.getNumber1(), input.getNumber2(), input.getOperator());
         possibleInputs.possibleCalculations();
 
 
