@@ -1,13 +1,20 @@
+import Calculations.Input;
+import Calculations.PossibleInputs;
+import Exceptions.MyCustomException;
+
 import java.util.Scanner;
 
 class Main {
     public Main() {
     }
 
-    public static void main(String[] args) {
-        ReadLine readLine = new ReadLine();
-        Calculations calculations = new Calculations(readLine.getA(), readLine.getOperator(), readLine.getB());
-        Result.outToConsole(calculations.getCalc().getResult());
+    public static void main(String[] args) throws MyCustomException {
+        Input input = new Input();
+        input.input();
+        PossibleInputs possibleInputs = new PossibleInputs(input.getNumber1(),input.getNumber2(), input.getOperator());
+        possibleInputs.possibleCalculations();
+
+
 
        /* String operator;
         int number1, number2;
